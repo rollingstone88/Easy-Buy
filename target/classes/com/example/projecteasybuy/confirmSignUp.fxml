@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="766.0" prefWidth="1146.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projecteasybuy.SignUpController">
+   <children>
+      <ImageView fitHeight="766.0" fitWidth="1228.0" opacity="0.3" pickOnBounds="true">
+         <image>
+            <Image url="@HOME/271843543_4951430914909059_4318918990932425320_n.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="398.0" layoutY="339.0" prefHeight="27.0" prefWidth="368.0" text="Enter Confirmation code:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="confirmtext" layoutX="400.0" layoutY="383.0" prefHeight="27.0" prefWidth="258.0" />
+      <Button layoutX="492.0" layoutY="422.0" mnemonicParsing="false" onAction="#onConfirmClick" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: red; -fx-border-insets: 90;" text="confirm" textFill="WHITE" />
+   </children>
+</AnchorPane>

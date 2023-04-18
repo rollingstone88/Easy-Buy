@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="856.0" prefWidth="1746.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projecteasybuy.progress">
+    <children>
+        <ImageView fitHeight="856.0" fitWidth="1746.0" opacity="0.11" pickOnBounds="true" AnchorPane.leftAnchor="0.0">
+            <image>
+                <Image url="@HOME/ananthu-ganesh-gWzmrNBd17E-unsplash.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="645.0" layoutY="114.0" prefHeight="136.0" prefWidth="253.0" text="EASY BUY" textFill="#ff0202">
+            <font>
+                <Font name="System Bold Italic" size="50.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="876.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@HOME/Shopping-Cart-03-256.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="582.0" layoutY="305.0" prefHeight="95.0" prefWidth="583.0" text="YOUR ORDER HAS BEEN CONFIRMED" textFill="#fc0202">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="95.0" fitWidth="63.0" layoutX="511.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HOME/tick.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="772.0" layoutY="682.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #FC0202;" text="HOME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="783.0" layoutY="399.0" mnemonicParsing="false" onAction="#ok" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: #FC0202;" text="OK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <ProgressIndicator fx:id="progressIndicator" layoutX="574.0" layoutY="505.0" progress="0.0" />
+      <ProgressIndicator fx:id="progressIndicator1" layoutX="829.0" layoutY="505.0" progress="0.0" />
+      <ProgressIndicator fx:id="progressIndicator2" layoutX="1082.0" layoutY="505.0" progress="0.0" />
+      <Line endX="127.0" layoutX="702.0" layoutY="516.0" startX="-100.0" />
+      <Line endX="127.0" layoutX="956.0" layoutY="515.0" startX="-100.0" />
+      <Text fx:id="loadingText" layoutX="550.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items prepared" />
+      <Text fx:id="loadingText1" layoutX="802.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ready to deliver" />
+      <Text layoutX="1056.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery complete" />
+    </children>
+</AnchorPane>

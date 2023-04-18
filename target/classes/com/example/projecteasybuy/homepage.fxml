@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="735.0" prefWidth="1746.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projecteasybuy.navigationController">
+   <children>
+      <ImageView fitHeight="1225.0" fitWidth="1746.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HOME/129569-white-background-white-screen-blank-page-bright-white.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutY="60.0" prefHeight="203.0" prefWidth="1019.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="108.0" prefWidth="372.0" text="EASY BUY" textFill="#fc0202">
+               <font>
+                  <Font name="System Bold Italic" size="74.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="107.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@HOME/Shopping-Cart-03-256.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="400.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets top="100.0" />
+         </padding>
+      </HBox>
+      <ImageView fitHeight="405.0" fitWidth="597.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.topAnchor="323.0">
+         <image>
+            <Image url="@HOME/ff.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="cds" layoutX="-1.0" layoutY="322.0" mnemonicParsing="false" onAction="#switchToCDS" opacity="0.01" prefHeight="398.0" prefWidth="597.0" text="IUT CDS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="398.0" fitWidth="522.0" layoutX="597.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HOME/rocket.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="rocket" layoutX="596.0" layoutY="323.0" mnemonicParsing="false" onAction="#switchToRocket" opacity="0.04" prefHeight="398.0" prefWidth="521.0" text="Button" />
+      <ImageView fitHeight="398.0" fitWidth="597.0" layoutX="1117.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HOME/medss.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="pharmacy" layoutX="1118.0" layoutY="323.0" mnemonicParsing="false" onAction="#switchToPharmacy" opacity="0.02" prefHeight="398.0" prefWidth="597.0" text="MEDICINES">
+         <font>
+            <Font name="Arial Bold" size="45.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="34.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HOME/Maps-256.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="277.0" prefHeight="30.0" prefWidth="315.0" text="Islamic University of Technology" textFill="#fc0202">
+         <font>
+            <Font name="Arial Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="1362.0" layoutY="45.0" mnemonicParsing="false" onAction="#switchToLogOut" style="-fx-background-color: fc0202;" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
